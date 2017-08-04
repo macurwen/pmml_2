@@ -57,7 +57,6 @@ public class PmmlProcessor implements Processor{
                        arguments.put(inputFieldName, inputFieldValue);
                    }
            });
-
            Gson gson = new Gson();
            String json = gson.toJson(arguments);
 
