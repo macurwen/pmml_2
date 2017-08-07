@@ -58,7 +58,7 @@ public class PmmlProcessor implements Processor{
                    }
            });
            Gson gson = new Gson();
-           String json = gson.toJson(arguments);
+           String json = gson.toJson(evaluator.evaluate(arguments));
 
            exhange.getIn().setBody(json);
        }
